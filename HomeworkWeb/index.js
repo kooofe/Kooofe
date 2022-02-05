@@ -5,7 +5,8 @@ document.querySelector("p2").innerHTML = "Year : "+today.getFullYear();
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 document.querySelector("p3").innerHTML = "Today is : "+days[today.getDay()];
 document.querySelector("p4").innerHTML = "Date : "+today.getDate();
-document.querySelector("p5").innerHTML = "Month : "+today.getMonth();
+const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.querySelector("p5").innerHTML = "Month : "+month[today.getMonth()];
 (function () {
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
