@@ -22,15 +22,15 @@ document.querySelector("p5").innerHTML = "Month : "+month[today.getMonth()];
     startTime();
 })();
 
-var date = new Date("01/07/2024");
+var date = new Date("07/01/2024");
 var timeDifference = date.getTime() - today.getTime();
-var DaysBetween = timeDifference / (1000 * 3600 * 24);
+var DaysBetween = timeDifference / (1000 * 60* 60 * 24);
 
-document.querySelector("p7").innerHTML = (DaysBetween |0) + " days left until the freedom! "
+document.querySelector("p7").innerHTML = (DaysBetween ) + " days left until the freedom! "
 function Multiply(){
     var num1 = Number(document.getElementById("num1").value);
     var num2 = Number(document.getElementById("num2").value);
- document.getElementById("result").innerText = num1 * num2;
+    document.getElementById("result").innerText = num1 * num2;
 }
 function Divide(){
     var num1 = Number(document.getElementById("num1").value);
